@@ -1,9 +1,11 @@
 const isProduction = process.env.NODE_ENV === 'production';
 const errorIfProduction = isProduction ? 'error' : 'off';
 
-const additionalRules = ['./rules/best-practices', './rules/variables'].map(
-  require.resolve
-);
+const additionalRules = [
+  './rules/best-practices',
+  './rules/style',
+  './rules/variables'
+].map(require.resolve);
 
 module.exports = {
   extends: ['eslint:recommended'].concat(additionalRules),
@@ -13,10 +15,6 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    indent: ['error', 2],
-    'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
     'no-console': errorIfProduction,
     'no-debugger': errorIfProduction
   }
