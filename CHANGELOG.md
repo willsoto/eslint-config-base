@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/willsoto/eslint-config-base/compare/v1.2.0...v1.3.0) (2018-06-23)
+
+
+### Features
+
+* **rules/style:** add style rules ([b40f3cb](https://github.com/willsoto/eslint-config-base/commit/b40f3cb))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/willsoto/eslint-config-base/compare/v1.1.0...v1.2.0) (2018-06-23)
 
