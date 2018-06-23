@@ -50,6 +50,8 @@ module.exports = {
     'prefer-promise-reject-errors': 'error',
     radix: 'error',
     'require-await': 'error',
-    'vars-on-top': 'error'
+    'vars-on-top': 'error',
+    'wrap-iife': 'error',
+    yoda: 'error'
   }
 };
