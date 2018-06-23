@@ -2,6 +2,10 @@
   "name": "@willsoto/eslint-config-base",
   "version": "1.0.0",
   "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "author": {
     "email": "will.soto9+github@gmail.com",
     "name": "Will Soto",
