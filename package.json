@@ -1,0 +1,22 @@
+{
+  "name": "@willsoto/eslint-config-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "email": "will.soto9+github@gmail.com",
+    "name": "Will Soto",
+    "url": "https://github.com/willsoto"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^5.0.0",
+    "prettier": "^1.13.5"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.0.0",
+    "eslint-plugin-vue": "^4.5.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^8.2.4"
+  }
+}
