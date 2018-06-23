@@ -12,9 +12,14 @@
     "url": "https://github.com/willsoto"
   },
   "license": "Apache-2.0",
+  "scripts": {
+    "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
+    "postrelease": "git push --follow-tags origin master && npm publish"
+  },
   "devDependencies": {
     "eslint": "^5.0.0",
-    "prettier": "^1.13.5"
+    "prettier": "^1.13.5",
+    "standard-version": "^4.4.0"
   },
   "peerDependencies": {
     "eslint": ">=4.0.0",
