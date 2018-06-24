@@ -13,7 +13,8 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "prerelease": "eslint *.js rules/",
+    "lint": "eslint *.js rules/",
+    "prerelease": "yarn run lint",
     "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
     "postrelease": "git push --follow-tags origin master && npm publish"
   },
