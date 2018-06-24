@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/willsoto/eslint-config-base/compare/v1.3.0...v1.4.0) (2018-06-24)
+
+
+### Features
+
+* change parserOptions.ecmaVersion to 2018 ([4d1374f](https://github.com/willsoto/eslint-config-base/commit/4d1374f))
+* **rules/es6:** add es6 rules ([4864e66](https://github.com/willsoto/eslint-config-base/commit/4864e66))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/willsoto/eslint-config-base/compare/v1.2.0...v1.3.0) (2018-06-23)
 
