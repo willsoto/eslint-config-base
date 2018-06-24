@@ -3,6 +3,7 @@ const errorIfProduction = isProduction ? 'error' : 'off';
 
 const additionalRules = [
   './rules/best-practices',
+  './rules/es6',
   './rules/style',
   './rules/variables'
 ].map(require.resolve);
