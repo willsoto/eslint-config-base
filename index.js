@@ -12,7 +12,7 @@ module.exports = {
   extends: ['eslint:recommended'].concat(additionalRules),
   parserOptions: {
     parser: 'babel-eslint',
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: 'module'
   },
   rules: {
