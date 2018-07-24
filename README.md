@@ -2,7 +2,7 @@
 
 > My eslint config
 
-## Installation
+## Installation (Basic)
 
 ```bash
 yarn add eslint @willsoto/eslint-config-base --dev
@@ -10,6 +10,16 @@ yarn add eslint @willsoto/eslint-config-base --dev
 
 ```bash
 npm install eslint @willsoto/eslint-config-base --save-dev
+```
+
+## Installation (with Vue.js)
+
+```bash
+yarn add eslint @willsoto/eslint-config-base eslint-plugin-vue --dev
+```
+
+```bash
+npm install eslint @willsoto/eslint-config-base eslint-plugin-vue --save-dev
 ```
 
 ## Usage
@@ -23,6 +33,8 @@ npm install eslint @willsoto/eslint-config-base --save-dev
 ```
 
 ### Vue.js
+
+Everything from `Basic` plus additional Vue.js options
 
 ```json
 {
