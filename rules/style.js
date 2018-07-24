@@ -74,13 +74,13 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
-    'object-curly-newline': ['error', 'always'],
-    'object-curly-spacing': [
+    'object-curly-newline': [
       'error',
       {
         consistent: true
       }
     ],
+    'object-curly-spacing': ['error', 'always'],
     'object-property-newline': 'error',
     'prefer-object-spread': 'error',
     'quote-props': ['error', 'as-needed'],
