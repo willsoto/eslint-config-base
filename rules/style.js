@@ -75,7 +75,12 @@ module.exports = {
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
     'object-curly-newline': ['error', 'always'],
-    'object-curly-spacing': ['error', 'always'],
+    'object-curly-spacing': [
+      'error',
+      {
+        consistent: true
+      }
+    ],
     'object-property-newline': 'error',
     'prefer-object-spread': 'error',
     'quote-props': ['error', 'as-needed'],
