@@ -19,8 +19,8 @@
     "postrelease": "git push --follow-tags origin master && npm publish"
   },
   "devDependencies": {
-    "eslint": "^5.0.0",
-    "prettier": "^1.13.5",
+    "eslint": "^5.2.0",
+    "prettier": "^1.13.7",
     "standard-version": "^4.4.0"
   },
   "peerDependencies": {
@@ -28,6 +28,6 @@
     "eslint-plugin-vue": "^4.5.0"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.4"
+    "babel-eslint": "^8.2.6"
   }
 }
