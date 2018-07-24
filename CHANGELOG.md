@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/willsoto/eslint-config-base/compare/v1.4.1...v1.4.2) (2018-07-24)
+
+
+### Bug Fixes
+
+* **rules/style:** it's object-curly-newline, not object-curly-spacing ([ebc82f7](https://github.com/willsoto/eslint-config-base/commit/ebc82f7))
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/willsoto/eslint-config-base/compare/v1.4.0...v1.4.1) (2018-06-24)
 
