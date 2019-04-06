@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.0.0](https://github.com/willsoto/eslint-config-base/compare/v1.5.1...v2.0.0) (2019-04-06)
+
+
+### Bug Fixes
+
+* remove prettier ([a3d7421](https://github.com/willsoto/eslint-config-base/commit/a3d7421))
+
+
+### BREAKING CHANGES
+
+* prettier no longer included
+
+Signed-off-by: Will Soto <willsoto@users.noreply.github.com>
+
+
+
 ## [1.5.1](https://github.com/willsoto/eslint-config-base/compare/v1.5.0...v1.5.1) (2019-04-06)
 
 
