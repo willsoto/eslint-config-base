@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.1](https://github.com/willsoto/eslint-config-base/compare/v1.5.0...v1.5.1) (2019-04-06)
+
+
+### Bug Fixes
+
+* **typescript:** apply prettier/[@typescript-eslint](https://github.com/typescript-eslint) to TS only ([70411e4](https://github.com/willsoto/eslint-config-base/commit/70411e4))
+
+
+
 # [1.5.0](https://github.com/willsoto/eslint-config-base/compare/v1.4.2...v1.5.0) (2019-04-06)
 
 
