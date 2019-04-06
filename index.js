@@ -9,11 +9,7 @@ const additionalRules = [
 ].map(require.resolve);
 
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'prettier',
-    'prettier/@typescript-eslint'
-  ].concat(additionalRules),
+  extends: ['eslint:recommended', 'prettier'].concat(additionalRules),
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2018,
