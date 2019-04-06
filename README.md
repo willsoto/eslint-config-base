@@ -15,11 +15,21 @@ npm install eslint @willsoto/eslint-config-base --save-dev
 ## Installation (with Vue.js)
 
 ```bash
-yarn add eslint @willsoto/eslint-config-base eslint-plugin-vue --dev
+yarn add eslint-plugin-vue --dev
 ```
 
 ```bash
-npm install eslint @willsoto/eslint-config-base eslint-plugin-vue --save-dev
+npm install eslint-plugin-vue --save-dev
+```
+
+## Installation (with TypeScript)
+
+```bash
+yarn add @typescript-eslint/eslint-plugin --dev
+```
+
+```bash
+npm install @typescript-eslint/eslint-plugin --save-dev
 ```
 
 ## Usage
@@ -39,5 +49,19 @@ Everything from `Basic` plus additional Vue.js options
 ```json
 {
   "extends": ["@willsoto/eslint-config-base/vue"]
+}
+```
+
+### TypeScript
+
+Everything from `Basic` plus additional TypeScript options
+
+```json
+{
+  "extends": ["@willsoto/eslint-config-base/typescript"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
 ```
