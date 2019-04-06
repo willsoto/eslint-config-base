@@ -1,8 +1,7 @@
 module.exports = {
   extends: [
     require.resolve('./index'),
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint'
+    'plugin:@typescript-eslint/recommended'
   ],
   parser: '@typescript-eslint/parser',
   rules: {

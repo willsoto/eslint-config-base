@@ -27,8 +27,7 @@
     "eslint": "^5.16.0"
   },
   "dependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint-config-prettier": "^4.1.0"
+    "babel-eslint": "^10.0.1"
   },
   "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.6.0",
