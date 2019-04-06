@@ -7,7 +7,7 @@
     "eslintconfig"
   ],
   "author": {
-    "email": "will.soto9+github@gmail.com",
+    "email": "willsoto@users.noreply.github.com",
     "name": "Will Soto",
     "url": "https://github.com/willsoto"
   },
@@ -19,15 +19,17 @@
     "postrelease": "git push --follow-tags origin master && npm publish"
   },
   "devDependencies": {
-    "eslint": "^5.2.0",
-    "prettier": "^1.13.7",
-    "standard-version": "^4.4.0"
+    "eslint": "5.2.0",
+    "prettier": "1.16.4",
+    "standard-version": "5.0.2"
   },
   "peerDependencies": {
-    "eslint": ">=5.0.0",
-    "eslint-plugin-vue": "^4.5.0"
+    "eslint": "^5.16.0"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.6"
+    "babel-eslint": "10.0.1"
+  },
+  "optionalDependencies": {
+    "eslint-plugin-vue": "^5.2.2"
   }
 }
