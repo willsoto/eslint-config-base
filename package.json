@@ -13,7 +13,11 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "lint": "eslint *.js rules/",
+    "lint:all": "yarn lint:src && yarn lint:javascript && yarn lint:typescript && yarn lint:vue",
+    "lint:src": "eslint *.js rules/",
+    "lint:javascript": "eslint ./tests/javascript --config ./tests/javascript/.eslintrc.json",
+    "lint:typescript": "eslint ./tests/typescript --ext ts --config ./tests/typescript/.eslintrc.json",
+    "lint:vue": "eslint ./tests/vue --ext vue --config ./tests/vue/.eslintrc.json",
     "prerelease": "yarn run lint",
     "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
     "postrelease": "git push --follow-tags origin master && npm publish"
@@ -21,7 +25,8 @@
   "devDependencies": {
     "eslint": "5.2.0",
     "prettier": "1.16.4",
-    "standard-version": "5.0.2"
+    "standard-version": "5.0.2",
+    "typescript": "~3.5.1"
   },
   "peerDependencies": {
     "eslint": "^5.16.0"
@@ -32,5 +37,9 @@
   "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "eslint-plugin-vue": "^5.2.2"
+  },
+  "volta": {
+    "node": "10.16.0",
+    "yarn": "1.16.0"
   }
 }

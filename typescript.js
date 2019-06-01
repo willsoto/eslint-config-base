@@ -6,6 +6,8 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   rules: {
     '@typescript-eslint/explicit-member-accessibility': 'off',
+    // eslint-disable-next-line no-magic-numbers
+    '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/no-parameter-properties': 'off',
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/no-for-in-array': 'error',

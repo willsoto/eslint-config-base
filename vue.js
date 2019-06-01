@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [require.resolve('./index'), 'plugin:vue/recommended'],
+  extends: [require.resolve('./index'), 'plugin:vue/strongly-recommended'],
   rules: {
     'vue/name-property-casing': ['error', 'kebab-case'],
     'vue/max-attributes-per-line': [
@@ -12,6 +12,18 @@ module.exports = {
     'vue/require-default-prop': 'error',
     'vue/require-prop-types': 'error',
     'vue/attributes-order': 'error',
-    'vue/html-quotes': ['error', 'double']
+    'vue/html-quotes': ['error', 'double'],
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'any',
+          normal: 'never',
+          component: 'never'
+        },
+        svg: 'never',
+        math: 'never'
+      }
+    ]
   }
 };

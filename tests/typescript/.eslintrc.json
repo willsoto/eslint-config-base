@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "extends": ["../../typescript.js"],
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "project": "./tests/typescript/tsconfig.json"
+  }
+}
