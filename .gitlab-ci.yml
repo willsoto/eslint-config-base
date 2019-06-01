@@ -1,0 +1,25 @@
+# cache using branch name
+# https://gitlab.com/help/ci/caching/index.md
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules
+
+.scripts:
+  before_script:
+    - apk update && apk upgrade && apk add python make g++
+    - yarn install
+  script:
+    - yarn lint:all
+
+node-lts:
+  image: node:lts-alpine
+  extends: .scripts
+
+node-11:
+  image: node:11-alpine
+  extends: .scripts
+
+node-12:
+  image: node:12-alpine
+  extends: .scripts
