@@ -3,10 +3,11 @@ workflow "Automerge on CI Pass" {
   on = "status"
 }
 
-action "Merge pull requests" {
+action "Merge Dependabot PRs" {
   uses = "pascalgn/automerge-action@v0.2.3"
   env = {
-    MERGE_METHOD = "rebase"
+    MERGE_METHOD = "rebase",
+    LABELS = "dependencies"
   }
   secrets = ["GITHUB_TOKEN"]
 }
