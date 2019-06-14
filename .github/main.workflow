@@ -6,7 +6,7 @@ workflow "Automerge on CI Pass" {
 action "Merge Dependabot PRs" {
   uses = "pascalgn/automerge-action@v0.2.3"
   env = {
-    MERGE_METHOD = "rebase"
+    MERGE_METHOD = "squash"
     LABELS = "dependencies"
   }
   secrets = ["GITHUB_TOKEN"]
