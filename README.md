@@ -1,5 +1,7 @@
 # @willsoto/eslint-config-base
 
+[![pipeline status](https://gitlab.com/willsoto/eslint-config-base/badges/master/pipeline.svg)](https://gitlab.com/willsoto/eslint-config-base/commits/master)
+
 > My eslint config
 
 ## Installation (Basic)
