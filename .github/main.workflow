@@ -8,6 +8,7 @@ action "Merge Dependabot PRs" {
   env = {
     MERGE_METHOD = "squash"
     LABELS = "dependencies"
+    AUTOREBASE = "dependencies"
   }
   secrets = ["GITHUB_TOKEN"]
 }
