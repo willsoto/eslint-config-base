@@ -1,8 +1,6 @@
 workflow "CI" {
   resolves = [
     "Lint",
-    "Build",
-    "Test",
   ]
   on = "pull_request"
 }
@@ -10,8 +8,6 @@ workflow "CI" {
 workflow "CD" {
   resolves = [
     "Lint",
-    "Build",
-    "Test",
   ]
   on = "push"
 }
@@ -26,19 +22,5 @@ action "Lint" {
   uses  = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Install"]
   runs  = "yarn"
-  args  = "lint"
-}
-
-action "Build" {
-  uses  = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["Install"]
-  runs  = "yarn"
-  args  = "build"
-}
-
-action "Test" {
-  uses  = "willsoto/node-lts-browsers@master"
-  needs = ["Install"]
-  runs  = "yarn"
-  args  = "test"
+  args  = "lint:all"
 }
