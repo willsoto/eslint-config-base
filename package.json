@@ -1,52 +1,66 @@
 {
   "name": "@willsoto/eslint-config-base",
+  "license": "Apache-2.0",
+  "author": "Will Soto <willsoto@users.noreply.github.com> (https://github.com/willsoto)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/willsoto/eslint-config-base.git"
+  },
   "version": "2.0.0",
   "main": "index.js",
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
-  "author": {
-    "email": "willsoto@users.noreply.github.com",
-    "name": "Will Soto",
-    "url": "https://github.com/willsoto"
-  },
-  "license": "Apache-2.0",
   "scripts": {
     "lint:all": "yarn lint:src && yarn lint:javascript && yarn lint:typescript && yarn lint:vue",
-    "lint:src": "eslint *.js rules/",
     "lint:javascript": "eslint ./tests/javascript --config ./tests/javascript/.eslintrc.json",
+    "lint:src": "eslint *.js rules/",
     "lint:typescript": "eslint ./tests/typescript --ext ts --config ./tests/typescript/.eslintrc.json",
     "lint:vue": "eslint ./tests/vue --ext vue --config ./tests/vue/.eslintrc.json",
     "prerelease": "yarn run lint",
     "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
     "postrelease": "git push --follow-tags origin master && npm publish"
   },
-  "devDependencies": {
-    "eslint": "5.16.0",
-    "prettier": "1.18.2",
-    "standard-version": "7.0.0",
-    "typescript": "~3.6.4"
-  },
-  "peerDependencies": {
-    "eslint": "^5.16.0"
-  },
-  "dependencies": {
-    "babel-eslint": "^10.0.3"
-  },
   "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "eslint-plugin-vue": "^5.2.3"
   },
+  "dependencies": {
+    "babel-eslint": "^10.0.3"
+  },
+  "peerDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "husky": "~3.0.8",
+    "lint-staged": "~9.4.2",
+    "prettier": "1.18.2",
+    "prettier-package-json": "~2.1.0",
+    "standard-version": "7.0.0",
+    "typescript": "~3.6.4"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "package.json": [
+      "prettier-package-json --write",
+      "git add"
+    ]
+  },
   "volta": {
     "node": "10.16.0",
     "yarn": "1.16.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/willsoto/eslint-config-base.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
