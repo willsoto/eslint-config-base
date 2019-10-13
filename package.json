@@ -14,9 +14,8 @@
     "lint:src": "eslint *.js rules/",
     "lint:typescript": "eslint ./tests/typescript --ext ts --config ./tests/typescript/.eslintrc.json",
     "lint:vue": "eslint ./tests/vue --ext vue --config ./tests/vue/.eslintrc.json",
-    "prerelease": "yarn run lint",
     "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
-    "postrelease": "git push --follow-tags origin master && npm publish"
+    "postrelease": "git push --follow-tags origin master"
   },
   "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.9.0",
