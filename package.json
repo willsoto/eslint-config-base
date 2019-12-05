@@ -34,7 +34,7 @@
     "prettier": "1.19.1",
     "prettier-package-json": "~2.1.0",
     "standard-version": "7.0.1",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.3"
   },
   "keywords": [
     "eslint",
